@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resumo de Pagamento</h1>
+        <div class="order-summary">
+            <h2>Itens</h2>
+            <p>Hamburger: <span class="price">R$ 15,00</span></p>
+            <p>Refrigerante: <span class="price">R$ 15,00</span></p>
+            <hr>
+            <p class="total">Total: <span class="price">R$ 30,00</span></p>
+        </div>
+        
+        <div class="payment-methods">
+            <h2>Formas de Pagamento</h2>
+            <label>
+                <input type="radio" name="payment" value="pix"> PIX
+            </label><br>
+            <label>
+                <input type="radio" name="payment" value="dinheiro"> Dinheiro
+            </label>
+        </div>
+        
+        <button class="finalize-btn">Finalizar</button>
+    </div>
+</body>
+</html>
+

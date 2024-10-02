@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.profile-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px; /* Espaço entre a imagem e o botão */
+}
+
+.btn-change-photo {
+    padding: 5px 10px;
+    background-color: #c10a52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-info h1 {
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+.btn-edit {
+    padding: 5px 15px;
+    background-color: #c10a52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit:hover, .btn-change-photo:hover {
+    opacity: 0.8;
+}
+
+/* Media queries para tornar o layout mais adaptável */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-edit, .btn-change-photo {
+        padding: 5px 10px;
+    }
+
+    .profile-header {
+        flex-direction: column; /* Coloca o botão abaixo da imagem em telas menores */
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adiciona espaço abaixo da imagem no layout vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-edit, .btn-change-photo {
+        padding: 5px 8px;
+    }
+}
