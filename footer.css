@@ -44,12 +44,3 @@ footer a:hover {
     text-decoration: underline;
     color: #1e90ff;
 }
-
-@media (min-width: 600px) {
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
