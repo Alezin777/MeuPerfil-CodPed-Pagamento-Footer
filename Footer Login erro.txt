@@ -1,0 +1,1 @@
+para arrumar o footer no login é so ir na pasta do login.css e apagar o footer la no final do codigo
